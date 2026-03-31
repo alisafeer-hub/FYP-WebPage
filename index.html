@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncertainty Visualization in AI Interfaces | Research Paper Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fa-solid fa-brain" style="font-size: 2.5rem; color: var(--accent-secondary);"></i><!-- <span>Research</span> -->
+            </div>
+            <a href="#demo-viewer" class="nav-btn">View Research Paper</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="badge">Scoping Review</div>
+            <h1 class="title">Uncertainty Visualization in <span>AI Interfaces</span></h1>
+            <h2 class="subtitle">A Scoping Review for Designing Trustworthy Systems</h2>
+
+            <div class="university-info"
+                style="margin-top: -0.5rem; margin-bottom: 1rem; color: var(--text-muted); font-size: 1.15rem; line-height: 1.4;">
+                <span style="font-weight: 600; color: var(--text-main);">Benazir Bhutto Shaheed University
+                    Lyari</span><br>
+                Department of Computer Science
+            </div>
+
+            <div class="authors">
+                <div class="author">
+                    <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="author-info">
+                        <span class="name">Ali Hassan</span>
+                        <span class="role">B2331012</span>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="author-info">
+                        <span class="name">Abdul Wahab</span>
+                        <span class="role">B2331006</span>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="author-info">
+                        <span class="name">Humna Allauddin</span>
+                        <span class="role">B2331048</span>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="author-info">
+                        <span class="name">Minahil Khan</span>
+                        <span class="role">B2331061</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authors" style="margin-top: 1rem;">
+                <div class="author">
+                    <div class="author-avatar"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <div class="author-info">
+                        <span class="name">Dr Zaffar Ahmed Shaikh</span>
+                        <span class="role">Supervisor</span>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-avatar"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <div class="author-info">
+                        <span class="name">Dr Shafique Awan</span>
+                        <span class="role">Co-Supervisor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="#demo-viewer" class="btn btn-primary"><i class="fa-regular fa-file-pdf"></i> Read Paper</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="abstract-section container">
+            <div class="glass-card abstract-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <h3>Abstract</h3>
+                </div>
+                <p>
+                    Our study explores how AI systems communicate uncertainty through visualization.
+                    As artificial intelligence increasingly informs high-stakes decision-making, understanding
+                    the reliability of these models becomes critical. We look at how different studies say
+                    visualization affects user trust. By synthesizing current frameworks, this review highlights
+                    effective design patterns that align human perception with algorithmic probabilistic outputs,
+                    thereby fostering calibrated trust in intelligent user interfaces.
+                </p>
+                <div class="keywords">
+                    <span>AI Uncertainty</span>
+                    <span>Uncertainty Visualization</span>
+                    <span>Confidence in AI</span>
+                    <span>Explainable AI</span>
+                    <span>Trust in AI</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo-viewer" class="pdf-section container">
+            <div class="section-title">
+                <h2>Research Paper Document</h2>
+                <p>Read the full scoping review on uncertainty visualization in AI interfaces below.</p>
+            </div>
+
+            <div class="glass-card pdf-container">
+                <div class="pdf-toolbar">
+                    <div class="toolbar-left">
+                        <i class="fa-regular fa-file-pdf"></i>
+                        <span>Ali_Hassan_Designing_for_Trust_AI.pdf</span>
+                    </div>
+                </div>
+
+                <div class="iframe-wrapper">
+                    <!-- The actual PDF embedded directly -->
+                    <iframe id="pdf-frame" src="Ali_Hassan_Designing_for_Trust_AI.pdf" title="PDF Viewer"
+                        style="display: block;"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Research Project. All rights reserved.</p>
+            <p>Department of Computer Science</p>
+        </div>
+    </footer>
+
+    <!-- PDF-Lib for generating the mock 12-page PDF within the browser -->
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
